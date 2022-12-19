@@ -131,7 +131,7 @@ if webvtt == 1:
         subnum = 1
         subnumstr = str(subnum)
         for line in original:
-            if "WEBVTT" in line or re.search("^Kind:.*$",line) or re.search("^Language:.*$",line) or re.search("(.*:.*:.*-->.*:.*:.*)",line):
+            if "WEBVTT" in line or re.search("^Kind:.*$",line) or re.search("^Language:.*$",line) or re.search("(.*:.*-->.*:.*)",line):
                 line = ''
             if not line.strip('\n') == '':
                 if args.screen: print(line, end='')
